@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Set Date and Time</title>  
+    <style>  
+        body {  
+            font-size: 24px;  
+            text-align: center;  
+            family: Arial, sans-serif;  
+        }  
+        form {  
+            display: inline-block;  
+        }  
+        input[type="text"], input[type="submit"] {  
+            font-size: 20px;  
+            padding: 10px;  
+            margin: 10px;  
+            width: 200px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>Set the Date and Time</h1>  
+    <form method="post" action="/set_datetime">  
+        <label for="year">Year:</label>  
+        <input type="number" id="year" name="year" required min="1900" max="9999"><br><br>  
+        <label for="month">Month:</label>  
+        <input type="number" id="month" name="month" required min="1" max="12"><br><br>  
+        <label for="day">Day:</label>  
+        <input type="number" id="day" name="day" required min="1" max="31"><br><br>  
+        <label for="weekday">Weekday:</label>  
+        <input type="number" id="weekday" name="weekday" required min="1" max="7"><br><br>  
+        <label for="hour">Hour:</label>  
+        <input type="number" id="hour" name="hour" required min="0" max="23"><br><br>  
+        <label for="minute">Minute:</label>  
+        <input type="number" id="minute" name="minute" required min="0" max="59"><br><br>  
+        <label for="second">Second:</label>  
+        <input type="number" id="second" name="second" required min="0" max="59"><br><br>  
+        <input type="submit" value="Set Date and Time">  
+    </form>  
+</body>  
+</html>
